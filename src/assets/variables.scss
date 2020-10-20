@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: '#fff';
+    box-sizing: border-box;
+}
+
+
+
+
+//BREAK POINTS
+
+$mobileBreak: 675px;
+$tabletBreak: 800px;
+
+
+
+
+// SHOW/HIDE
+
+.mobile-show {
+    @media only screen and (min-width: $mobileBreak +1px) {
+        display: none;
+    }
+}
+
+.mobile-hide {
+    @media only screen and (max-width: $mobileBreak) {
+        display: none;
+    }
+}
+
+.tablet-show {
+    @media only screen and (min-width: $tabletBreak +1px) {
+        display: none;
+    }
+}
+
+.tablet-hide {
+    @media only screen and (max-width: $tabletBreak) {
+        display: none;
+    }
+}
+
+
+
+
+//PAGE WIDTHS
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 8px;
+    position: relative;
+}
+
+.wrapper-inset {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+    position: relative;
+}
+
+
+
+
+// CONTENT
+
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 300;
+
+    @media only screen and (min-width: 675px) {
+        font-size: 38px;
+    }
+}
+
+h2 {
+    color: #F1395F;
+    font-size: 18px;
+    font-weight: 400;
+
+    @media only screen and (min-width: 675px) {
+        font-size: 20px;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: .5px;
+}
